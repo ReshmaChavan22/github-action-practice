@@ -1,0 +1,24 @@
+# Workflow
+# should have name
+name: Hello
+# on tell when the workflow runs
+on:
+  work_dispatch:
+
+# Jobs
+# should be inside the workflow
+# job tells what the workflow should do, there can be one or more jobs
+# job is an onbject hence need indentation
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello to everyone
+        run: echo "Hello Dosto"
+
+
+#Steps
+#should be inside the Jobs
+
+#Actions
+#should be inside Steps
